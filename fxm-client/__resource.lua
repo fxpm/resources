@@ -1,4 +1,6 @@
 server_script "server/main.lua"
+server_script "server/events.lua"
+
 server_script "listener/index.js"
 
 client_script "client.lua"
