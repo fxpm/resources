@@ -1,0 +1,18 @@
+# Configure FXM General Settings
+set fxm_server_id "SERVER_ID"
+
+# Configure FXM API Settings
+set fxm_api "API_URL"
+
+# Configure FXM Socket.io Settings
+set fxm_io_host "SOCKET_IO_HOST"
+
+# start the Yarn resource because we the V8 API.
+start yarn
+
+# Start the FXM Resources
+start fxm-api
+
+# fxm-client should always be the LAST resource
+# to be started in order for proper data tracking.
+start fxm-client
