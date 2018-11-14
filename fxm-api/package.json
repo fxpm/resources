@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "axios": "^0.18.0",
+    "laravel-echo": "^1.4.1",
+    "pusher-js": "^4.3.1",
+    "socket.io-client": "^2.1.1",
+    "socketio-wildcard": "^2.0.0"
+  }
+}

@@ -1,8 +1,11 @@
-server_script "server/main.lua"
-server_script "server/events.lua"
 
-server_script "listener/index.js"
+server_script "@fxm-api/Server/Main.js"
+server_script "@fxm-api/Server/HTTP.js"
 
-client_script "client.lua"
+server_script "Server/Main.js"
+server_script "Server/Loaders/Resources.js"
+server_script "Server/Loaders/Actions.js"
 
 resource_manifest_version "44febabe-d386-4d18-afbe-5e627f4af937"
+
+dependency 'yarn'
